@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito+Sans:wght@400;600;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+
+html {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 600;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  
+
+}
+
+body {
+  margin: 0;
+  background-color: #ffffff;
+  /* background-color: #f7f7f7; */
+}
+main{
+  margin-top: 8rem;
+  padding: 0 3rem;
+
+}

@@ -1,0 +1,20 @@
+
+.picture {
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+  }
+.container {
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.container h2 {
+    text-align: center;
+    font-weight: 300;
+    /* font-family: 'Poppins'; */
+    letter-spacing: 0;
+    color: #414141;
+}
+  
