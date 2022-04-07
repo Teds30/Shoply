@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Shoply/static/css/main.93891cb8.css",
+    "main.js": "/Shoply/static/js/main.c3f1f9b6.js",
+    "static/media/emptycart.svg": "/Shoply/static/media/emptycart.b5055e56282bba2de480b7282277f3f9.svg",
+    "index.html": "/Shoply/index.html",
+    "main.93891cb8.css.map": "/Shoply/static/css/main.93891cb8.css.map",
+    "main.c3f1f9b6.js.map": "/Shoply/static/js/main.c3f1f9b6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.93891cb8.css",
+    "static/js/main.c3f1f9b6.js"
+  ]
+}
