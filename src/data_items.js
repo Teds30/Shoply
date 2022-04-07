@@ -10,23 +10,21 @@ export const DUMMY_ITEMS = [
                 id: 1,
                 fromUID: '123456789',
                 star: 4,
-                comment: [
-                    {
-                        message: 'Exactly fits on me! Great product :)',
-                        image: ''
-                    }
-                ]
+                comment:
+                {
+                    message: 'Exactly fits on me! Great product :)',
+                    image: ''
+                }
             },
             {
                 id: 2,
                 fromUID: '123456789',
                 star: 4,
-                comment: [
-                    {
-                        message: 'Exactly fits on me! Great product :)',
-                        image: ''
-                    }
-                ]
+                comment:
+                {
+                    message: 'Exactly fits on me! Great product :)',
+                    image: ''
+                }
             },
         ]
     },
@@ -41,12 +39,11 @@ export const DUMMY_ITEMS = [
                 id: 1,
                 fromUID: '123456789',
                 star: 4,
-                comment: [
-                    {
-                        message: 'Exactly fits on me! Great product :)',
-                        image: ''
-                    }
-                ]
+                comment:
+                {
+                    message: 'Exactly fits on me! Great product :)',
+                    image: ''
+                }
             }
         ]
     },
@@ -61,12 +58,11 @@ export const DUMMY_ITEMS = [
                 id: 1,
                 fromUID: '123456789',
                 star: 4,
-                comment: [
-                    {
-                        message: 'Exactly fits on me! Great product :)',
-                        image: ''
-                    }
-                ]
+                comment:
+                {
+                    message: 'Exactly fits on me! Great product :)',
+                    image: ''
+                }
             }
         ]
     },
@@ -81,12 +77,11 @@ export const DUMMY_ITEMS = [
                 id: 1,
                 fromUID: '123456789',
                 star: 4,
-                comment: [
-                    {
-                        message: 'Exactly fits on me! Great product :)',
-                        image: ''
-                    }
-                ]
+                comment:
+                {
+                    message: 'Exactly fits on me! Great product :)',
+                    image: ''
+                }
             }
         ]
     },
@@ -101,12 +96,11 @@ export const DUMMY_ITEMS = [
                 id: 1,
                 fromUID: '123456789',
                 star: 4,
-                comment: [
-                    {
-                        message: 'Exactly fits on me! Great product :)',
-                        image: ''
-                    }
-                ]
+                comment:
+                {
+                    message: 'Exactly fits on me! Great product :)',
+                    image: ''
+                }
             }
         ]
     },
@@ -121,12 +115,11 @@ export const DUMMY_ITEMS = [
                 id: 1,
                 fromUID: '123456789',
                 star: 4,
-                comment: [
-                    {
-                        message: 'Exactly fits on me! Great product :)',
-                        image: ''
-                    }
-                ]
+                comment:
+                {
+                    message: 'Exactly fits on me! Great product :)',
+                    image: ''
+                }
             }
         ]
     },
@@ -141,12 +134,11 @@ export const DUMMY_ITEMS = [
                 id: 1,
                 fromUID: '123456789',
                 star: 4,
-                comment: [
-                    {
-                        message: 'Exactly fits on me! Great product :)',
-                        image: ''
-                    }
-                ]
+                comment:
+                {
+                    message: 'Exactly fits on me! Great product :)',
+                    image: ''
+                }
             }
         ]
     },
@@ -161,12 +153,11 @@ export const DUMMY_ITEMS = [
                 id: 1,
                 fromUID: '123456789',
                 star: 4,
-                comment: [
-                    {
-                        message: 'Exactly fits on me! Great product :)',
-                        image: ''
-                    }
-                ]
+                comment:
+                {
+                    message: 'Exactly fits on me! Great product :)',
+                    image: ''
+                }
             }
         ]
     },
@@ -181,12 +172,11 @@ export const DUMMY_ITEMS = [
                 id: 1,
                 fromUID: '123456789',
                 star: 4,
-                comment: [
-                    {
-                        message: 'Exactly fits on me! Great product :)',
-                        image: ''
-                    }
-                ]
+                comment:
+                {
+                    message: 'Exactly fits on me! Great product :)',
+                    image: ''
+                }
             }
         ]
     },
