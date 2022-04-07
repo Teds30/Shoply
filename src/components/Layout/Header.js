@@ -1,4 +1,4 @@
-import React, { Fragment, useContext } from "react";
+import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
 
 // import CartContext from "../../context/cart-context";

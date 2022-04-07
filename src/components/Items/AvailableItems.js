@@ -4,13 +4,14 @@ import ContentItem from './ContentItem/ContentItem'
 
 import CartContext from '../../context/cart-context'
 import { IconContext } from 'react-icons'
-import { BsFillCartCheckFill,BsCheckLg } from 'react-icons/bs'
+import { BsFillCartCheckFill, BsCheckLg } from 'react-icons/bs'
 
 import classes from './AvailableItems.module.css'
 import Alert from '../UI/Alert'
 import useDidMountEffect from '../../custom_hook/useDidMountEffect'
 
 import { DUMMY_ITEMS } from '../../data_items'
+
 
 
 const AvailableItems = () => {
@@ -27,43 +28,39 @@ const AvailableItems = () => {
         setShowAlert(false)
     }
 
-    useDidMountEffect(()=> {
+    useDidMountEffect(() => {
         showAlertHandler()
         // console.log('time star')
-        const timer = setTimeout(()=> {
+        const timer = setTimeout(() => {
             hideAlertHandler()
         }, 2500)
-        return ()=> {
+        return () => {
             clearTimeout(timer)
             // console.log('cleared timeout')
         }
     }, [cartCtx])
 
 
-
-    const itemsList = DUMMY_ITEMS.map((item) => (
-        <ContentItem
-            key={item.id}
-            id={item.id}
-            name={item.name}
-            price={item.price}
-            image ={item.image}
-            star={item.star}
-            reviews={item.reviews}
-        />
-    ))
+    const itemsList = DUMMY_ITEMS.map((item) => {
+        return (
+                <ContentItem
+                key={item.id}
+                    item={item}
+                />
+        )
+    })
 
     return (
         <Fragment>
 
-            {showAlert && 
-            <Alert onClose={hideAlertHandler} label ='Added to Cart' icon={
-                <IconContext.Provider value={{ color: "#7DCB98", size: '24px'}}>
+            {showAlert &&
+                <Alert onClose={hideAlertHandler} label='Added to Cart' icon={
+                    <IconContext.Provider value={{ color: "#7DCB98", size: '24px' }}>
                         <div>
-                        <BsCheckLg/>
+                            <BsCheckLg />
                         </div>
-                      </IconContext.Provider>}>
-            </Alert>}
+                    </IconContext.Provider>}>
+                </Alert>}
             <section className={classes.items}>
                 <ul>
                     {itemsList}
