@@ -11,12 +11,6 @@
   font-size: 12px;
 }
 
-.picture_container {
-  position: relative;
-  background-color: #f7f7f7;
-  width: 250px;
-  height: 300px;
-}
 
 .price {
   font-weight: bold;
@@ -47,6 +41,12 @@
   color: #414141;
 }
 
+.picture_container {
+  position: relative;
+  background-color: #f7f7f7;
+  width: 250px;
+  height: 300px;
+}
 .fill {
   display: flex;
   justify-content: center;

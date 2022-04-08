@@ -1,4 +1,4 @@
-import React, { Fragment, useContext, useState } from 'react'
+import React, { Fragment, useContext, useState, useEffect } from 'react'
 
 import ContentItem from './ContentItem/ContentItem'
 
@@ -28,6 +28,20 @@ const AvailableItems = () => {
         setShowAlert(false)
     }
 
+    const [scrollPosition, setScrollPosition] = useState(0);
+    const handleScroll = () => {
+        const position = window.pageYOffset;
+        setScrollPosition(position);
+    };
+
+    useEffect(() => {
+        window.addEventListener("scroll", handleScroll);
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
     useDidMountEffect(() => {
         showAlertHandler()
         // console.log('time star')
@@ -43,10 +57,10 @@ const AvailableItems = () => {
 
     const itemsList = DUMMY_ITEMS.map((item) => {
         return (
-                <ContentItem
+            <ContentItem
                 key={item.id}
-                    item={item}
-                />
+                item={item}
+            />
         )
     })
 

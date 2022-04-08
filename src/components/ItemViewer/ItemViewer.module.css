@@ -1,3 +1,45 @@
-.content {
-    margin-top: 12em;
+.main-container{
+    font-size: 14px;
+}
+
+
+.link {
+    font-size: 1em;
+    color: #414141;
+    text-decoration: none;
+}
+.link-content {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link-text{
+    margin-left: 1em;
+    font-weight: bold;
+    /* border: 1px solid red; */
+}
+.icon {
+    vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+    .link-content{
+        font-size: 12px;
+    }
+    .icon{
+        font-size: 1em;
+        /* border: 1px solid red; */
+    }
+    .link-text{
+        letter-spacing: .4em;
+        font-size: .8em;
+        margin-left: 1em;
+        font-weight: bold;
+        /* border: 1px solid red; */
+    }
+    main{
+        margin-top: 64px;
+        padding: 0 24px;
+    }
 }
