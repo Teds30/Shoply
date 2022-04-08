@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 
 import CartContext from '../../../context/cart-context'
 import { IconContext } from 'react-icons'
+
+import { MdAddShoppingCart } from "react-icons/md";
+
 import ItemStar from './ItemStar'
 
 import classes from './ContentItem.module.css'
@@ -37,7 +40,7 @@ const ContentItem = (props) => {
                     </div>
                 </Link>
                 <button onClick={addToCartHandler} className={classes.circularBtn}>
-                    <span className={classes.plus}>+</span><span className={classes['hidden-text']}>Add to Cart</span>
+                    <span className={classes.plus}><MdAddShoppingCart/></span><span className={classes['hidden-text']}>Add to Cart</span>
                 </button>
             </div>
             <p className={classes.name}>{props.item.name}</p>
