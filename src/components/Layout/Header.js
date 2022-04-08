@@ -15,12 +15,12 @@ const Header = () => {
         <Fragment>
             <header className={classes.header}>
                 <div>
-                    <Link to="/shop" className={classes.link}>Home</Link>
+                    <Link to="/Shoply/shop" className={classes.link}>Home</Link>
                 </div>
                 <h2>SHOPLY</h2>
 
                 <div className={classes['cart-link']}>
-                    <Link to="/cart" className={classes.link}>Cart</Link>
+                    <Link to="/Shoply/cart" className={classes.link}>Cart</Link>
                     {/* {cartCtx.items.length > 0 && <div className={classes.badge}>
                        {cartCtx.items.length}
                     </div>} */}

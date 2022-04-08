@@ -27,7 +27,7 @@ const ContentItem = (props) => {
 
 
 
-    const toLink = `/items/${props.item.id}`
+    const toLink = `/Shoply/items/${props.item.id}`
 
     return (
         <li className={classes.item}>
