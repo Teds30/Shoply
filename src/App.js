@@ -17,8 +17,8 @@ function App() {
       <Header />
           <Routes>
 
-          <Route exact path="/" element={<main><Items /></main>} />
-            <Route exact path="/shop" element={<main><Items /></main>} />
+          <Route exact path="/Shoply" element={<main><Items /></main>} />
+            <Route path="/shop" element={<main><Items /></main>} />
             <Route path='/cart' element={ <main><Cart /></main>} />
             
             <Route path='/items/:id' element={ <main><ItemViewer /></main>} />
