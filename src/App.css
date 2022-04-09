@@ -6,9 +6,9 @@
 
 
 html {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Poppins';
   font-weight: 600;
-  letter-spacing: .2em;
+  /* letter-spacing: .2em; */
   text-transform: uppercase;
   
 
@@ -20,7 +20,6 @@ body {
   /* background-color: #f7f7f7; */
 }
 main{
-  margin-top: 8rem;
-  padding: 0 3rem;
+  margin-top: 80px;
 
 }
