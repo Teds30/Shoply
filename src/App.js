@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, useParams } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 
 import CartProvider from './context/CartProvider';
@@ -21,7 +21,7 @@ function App() {
             <Route path="/Shoply/shop" element={<main><Items /></main>} />
             <Route path='/Shoply/cart' element={ <main><Cart /></main>} />
             
-            <Route path='/Shoply/items/:id' element={ <main><ItemViewer /></main>} />
+            <Route path='/Shoply/items/:id' element={  <main><ItemViewer /></main>} />
           </Routes>
 
       </Router>
