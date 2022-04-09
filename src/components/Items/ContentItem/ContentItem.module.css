@@ -96,8 +96,8 @@
 }
 
 .reviewContainer {
-  margin-top: 1em;
   display: flex;
+  align-items: center;
 }
 
 .reviews {
@@ -107,6 +107,10 @@
   font-size: 0.6em;
   color: #41414190;
   
+}
+
+.item p{
+  margin-top: 1em;
 }
 
 

@@ -49,7 +49,7 @@ const ContentItem = (props) => {
                 <span className={classes.star}>{
                     <IconContext.Provider value={{ color: "#403E57" }}>
                         <div>
-                            <ItemStar star={props.item.star} />
+                            <ItemStar star={props.item.total_star} />
                         </div>
                     </IconContext.Provider>}</span>
                 <span className={classes.reviews}>{props.item.reviews.length} reviews</span>

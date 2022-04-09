@@ -1,14 +1,16 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import AvailableItems from './AvailableItems'
 
 import ItemsSummary from './ItemsSummary'
 
+import classes from './Items.module.css'
+
 const Items = () => {
   return (
-      <Fragment>
+      <div className={classes.items}>
           <ItemsSummary/>
           <AvailableItems/>
-      </Fragment>
+      </div>
   )
 }
 
