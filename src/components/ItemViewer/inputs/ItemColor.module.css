@@ -1,0 +1,43 @@
+:root {
+  --color-radio: red;
+}
+.radio-color {
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-around;
+  border: 2px solid #41414120;
+  border-radius: 32px;
+  width: 100px;
+  padding: 12px;
+}
+
+.radio-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    top: -5px;
+    left: -5px;
+    border-radius: 50%;
+}
+.radio{
+    border: 0;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: relative;
+    content: "";
+    display: inline-block;
+    visibility: visible;
+}
+
+.radio-selected{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: relative;
+    content: "";
+    display: inline-block;
+    visibility: visible;
+}

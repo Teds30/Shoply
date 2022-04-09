@@ -1,0 +1,10 @@
+.panel {
+  border: 0;
+  background-color: #fff;
+}
+.panel p {
+  color: #41414190;
+}
+.collapse {
+  border: 0;
+}

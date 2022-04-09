@@ -1,0 +1,16 @@
+.chip__selected{
+    background: #2c2c2c !important;
+    color: #fff !important;
+    border: 0 !important;
+    padding: 0 6px !important;
+    font-weight: 500 !important;
+    font-family: 'Poppins' !important;
+}
+
+.chip{
+    background: #f2f2f2 !important;
+    border: 0 !important;
+    padding: 0 6px !important;
+    font-weight: 500 !important;
+    font-family: 'Poppins' !important;
+}
