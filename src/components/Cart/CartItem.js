@@ -34,12 +34,9 @@ const CartItem = (props) => {
                 </div>
                 <div className={classes['item-info__info']}>
                     <div className={classes.col1}>
-                        <div>
                             <p className={classes.title}>{props.name}</p>
-                        </div>
-                        {/* <div>
-                            <span className={classes.price}>PHP {props.price.toLocaleString(undefined, { minimumFractionDigits: 2 })}</span>
-                        </div> */}
+                            <p className={classes.color}>color: {props.color.color}</p>
+                            <p className={classes.size}>size: {props.size.size}</p>
                     </div>
 
                     <div className={classes.col2}>

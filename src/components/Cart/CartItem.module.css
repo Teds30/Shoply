@@ -9,6 +9,7 @@
   padding: 1rem 0;
   margin: 1rem 0;
   letter-spacing: 0;
+  font-size: 16px;
 }
 
 
@@ -86,10 +87,25 @@
 }
 
 .title {
-  
-  letter-spacing: .1em;
+  font-weight: 600;
+  letter-spacing: 0em;
+  font-family: 'Poppins';
+  font-size: 1em;
 }
 
+.size{
+  font-weight: 300;
+  font-size: .8em;
+  letter-spacing: 0;
+  font-family: 'Poppins';
+}
+
+.color{
+  font-weight: 300;
+  font-size: .8em;
+  letter-spacing: 0;
+  font-family: 'Poppins';
+}
 .quantityContainer {
   display: inline-flex;
   border-radius: 12px;
@@ -129,12 +145,13 @@
   padding: 0em 1em;
   border-radius: 0;
 }
-
 .col1{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  margin-bottom: 0;
 
+}
+
+.col1 p{
+  margin-bottom: 0 !important;
 }
 .col2{
   
