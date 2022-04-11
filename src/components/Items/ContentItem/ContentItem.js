@@ -1,10 +1,10 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import { Link } from "react-router-dom";
 
-import CartContext from '../../../context/cart-context'
+// import CartContext from '../../../context/cart-context'
 import { IconContext } from 'react-icons'
 
-import { MdAddShoppingCart } from "react-icons/md";
+// import { MdAddShoppingCart } from "react-icons/md";
 
 import ItemStar from './ItemStar'
 
@@ -13,17 +13,17 @@ import classes from './ContentItem.module.css'
 const ContentItem = (props) => {
 
 
-    const cartCtx = useContext(CartContext)
+    // const cartCtx = useContext(CartContext)
 
-    const addToCartHandler = () => {
-        cartCtx.addItem({
-            id: props.item.id,
-            name: props.item.name,
-            price: props.item.price,
-            quantity: 1,
-            image: props.item.image
-        })
-    }
+    // const addToCartHandler = () => {
+    //     cartCtx.addItem({
+    //         id: props.item.id,
+    //         name: props.item.name,
+    //         price: props.item.price,
+    //         quantity: 1,
+    //         image: props.item.image
+    //     })
+    // }
 
 
 
@@ -39,9 +39,9 @@ const ContentItem = (props) => {
                         <img src={props.item.image} alt="" />
                     </div>
                 </Link>
-                <button onClick={addToCartHandler} className={classes.circularBtn}>
+                {/* <button onClick={addToCartHandler} className={classes.circularBtn}>
                     <span className={classes.plus}><MdAddShoppingCart/></span><span className={classes['hidden-text']}>Add to Cart</span>
-                </button>
+                </button> */}
             </div>
             <p className={classes.name}>{props.item.name}</p>
             {<div
