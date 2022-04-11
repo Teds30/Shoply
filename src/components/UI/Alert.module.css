@@ -21,6 +21,12 @@
     animation: slide-down 300ms ease-out forwards;
   }
 
+  .content p{
+    color: #414141;
+    margin-top: 1em;
+    letter-spacing: .1em;
+    font-weight: 600;
+  }
   .content{ 
     display: flex;
     justify-content: center;
@@ -43,7 +49,6 @@
 
   .icon {
     display: flex;
-    margin-top: .5em;
     align-items: center;
     
   }

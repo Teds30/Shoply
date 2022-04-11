@@ -8,10 +8,10 @@ const itemSizes = (props) => {
 
   const {size} = props
   
-  const chipClass = (props.selected === size.size_id) ? classes['chip__selected'] : classes.chip
+  const chipClass = (props.selected.size_id === size.size_id) ? classes['chip__selected'] : classes.chip
 
   return (
-      <Chip className={chipClass} label={size.size} variant="outlined" onClick={props.selectSize.bind(null, size.size_id)} clickable />
+      <Chip className={chipClass} label={size.size} variant="outlined" onClick={props.selectSize.bind(null, size)} clickable />
   )
 }
 

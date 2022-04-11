@@ -1,9 +1,10 @@
 header {
+  z-index: 200 !important;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 50px;
+  height:60px;
   /* height: 5em; */
   background-color: #ffffff;
   border-bottom: #ccc 2px solid;
@@ -18,14 +19,21 @@ header {
 }
 
 .header h2{
-  font-size: inherit;
+  font-size: 1em;
 }
 
 
 .link{
   font-size: 1em;
   color: #414141;
-  text-decoration: none;
+  text-decoration: none !important;
+  font-weight: 600;
+  
+}
+
+.link:active {
+  color: #414141;
+  text-decoration: none !important;
 }
 
 .cart-link{
@@ -37,7 +45,6 @@ header {
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  background-color: #d63f3f;
   color: #fff;
   display: flex;
   justify-content: center;
@@ -49,7 +56,7 @@ header {
   right: -1.5rem;
 }
 
-@media (min-width: 768px) { 
+@media (min-width: 769px) { 
   .header {
     height: 80px;
     font-size: 1em;
