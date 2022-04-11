@@ -1,0 +1,10 @@
+.primarybutton{
+    border: 0;
+    background-color: #232323;
+    padding: 10px 45px;
+    color: #fff;
+    font-weight: 600;
+    /* border-radius: 12px; */
+    /* box-shadow: 0 3px 12px #1890ff60; */
+    cursor: pointer;
+}
