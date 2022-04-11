@@ -2,9 +2,11 @@ import React, { useContext } from "react";
 
 import CartContext from "../../context/cart-context";
 
-import classes from "./Cart.module.css";
 import CartItem from "./CartItem";
 import EmptyCart from "./EmptyCart";
+import PrimaryButton from "../UI/PrimaryButton";
+
+import classes from "./Cart.module.css";
 
 const Cart = () => {
     const cartCtx = useContext(CartContext);
@@ -30,6 +32,8 @@ const Cart = () => {
                         quantity={item.quantity}
                         price={item.price}
                         image={item.image}
+                        color={item.color}
+                        size={item.size}
                         onRemove={cartItemRemoveHandler.bind(null, item.id)}
                         onAdd={cartItemAddHandler.bind(null, item)}
                     />
@@ -47,13 +51,13 @@ const Cart = () => {
         <section className={classes.cart}>
             {cartItems}
             {hasItems && (
-                <div>
+                <div className={classes.col1}>
                     <div className={classes.total}>
                         <span>Total Amount</span>
                         <span>
                             <div className={classes.orderInfo}>
                                 PHP {totalAmount}
-                                <button onClick={checkOutHandler}>CHECKOUT</button>
+                                <PrimaryButton onClick={checkOutHandler}>CHECKOUT</PrimaryButton>
                             </div>
                         </span>
                     </div>
