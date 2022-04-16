@@ -1,8 +1,7 @@
-import React, { useState, useContext, Fragment } from 'react'
+import React, { useState, Fragment } from 'react'
 
-
-import useDidMountEffect from '../../custom_hook/useDidMountEffect'
-import CartContext from '../../context/cart-context';
+import { useDispatch } from 'react-redux';
+import { cartActions } from '../store/slices/cart';
 
 import { useNavigate, Link } from "react-router-dom";
 
@@ -21,6 +20,8 @@ import Stack from '@mui/material/Stack';
 import classes from './ItemViewerContent.module.css'
 
 const ItemViewerContent = (props) => {
+
+    const dispatch = useDispatch()
 
     const { item } = props
 
@@ -47,18 +48,6 @@ const ItemViewerContent = (props) => {
         setSelectedColor(color)
     }
 
-
-    useDidMountEffect(() => {
-        setHasChosenSize('has')
-    }, [selectedSize])
-
-    useDidMountEffect(() => {
-        setHasChosenColor('has')
-    }, [selectedColor])
-
-
-    const cartCtx = useContext(CartContext)
-
     const addToCartHandler = () => {
 
         const cartItemID = item.id.toString() + selectedSize.size_id + selectedColor.color_id
@@ -75,24 +64,25 @@ const ItemViewerContent = (props) => {
             } else {
                 setHasChosenColor('has')
             }
-            if (hasChosenColor === 'has' && hasChosenSize === 'has') {
-                cartCtx.addItem({
-                    id: cartItemID,
-                    itemid: props.item.id,
-                    name: props.item.name,
-                    price: props.item.price,
-                    quantity: 1,
-                    // image: props.item.image,
-                    image: selectedColor.color_itemimage,
-                    color: selectedColor,
-                    size: selectedSize
-                })
+            if (selectedSize.size !== '' && selectedColor.color !== '') {
 
-                // console.log('COLOR LEN >> 0 : ADDED TO CART!')
+                dispatch(cartActions.add({
+                    item: {
+                        id: cartItemID,
+                        itemid: props.item.id,
+                        name: props.item.name,
+                        price: props.item.price,
+                        quantity: 1,
+                        // image: props.item.image,
+                        image: selectedColor.color_itemimage,
+                        color: selectedColor,
+                        size: selectedSize
+                    }
+                }))
+
+
                 props.onShowAlert()
-            } else {
-                // console.log('1 CANCELED!')
-            }
+            } 
         }
 
         if (item.colors.length === 0) {
@@ -101,25 +91,23 @@ const ItemViewerContent = (props) => {
             } else {
                 setHasChosenSize('has')
             }
-            if (hasChosenSize === 'has') {
-                cartCtx.addItem({
-                    id: cartItemID,
-                    itemid: props.item.id,
-                    name: props.item.name,
-                    price: props.item.price,
-                    quantity: 1,
-                    image: props.item.image,
-                    // image: selectedColor.color_itemimage,
-                    color: { color_id: '0', color: 'Basic' },
-                    size: selectedSize
-                })
+            if (selectedSize.size !== '') {
+                dispatch(cartActions.add({
+                    item: {
+                        id: cartItemID,
+                        itemid: props.item.id,
+                        name: props.item.name,
+                        price: props.item.price,
+                        quantity: 1,
+                        image: props.item.image,
+                        // image: selectedColor.color_itemimage,
+                        color: selectedColor,
+                        size: selectedSize
+                    }
+                }))
 
-                // console.log('COLOR LEN = 0 : ADDED TO CART!')
                 props.onShowAlert()
-
-            } else {
-                // console.log('2 CANCELED!')
-            }
+            } 
         }
 
 
@@ -134,7 +122,7 @@ const ItemViewerContent = (props) => {
 
     return (
         <div className={classes['main-content']}>
-            
+
             <Link to='/Shoply/' className={classes.link}>
                 <div className={classes['link-content']}>
                     <BsArrowLeft className={classes.icon} onClick={() => navigate(-1)} />

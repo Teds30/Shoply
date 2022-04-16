@@ -1,31 +1,13 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 
-// import CartContext from '../../../context/cart-context'
 import { IconContext } from 'react-icons'
-
-// import { MdAddShoppingCart } from "react-icons/md";
 
 import ItemStar from './ItemStar'
 
 import classes from './ContentItem.module.css'
 
 const ContentItem = (props) => {
-
-
-    // const cartCtx = useContext(CartContext)
-
-    // const addToCartHandler = () => {
-    //     cartCtx.addItem({
-    //         id: props.item.id,
-    //         name: props.item.name,
-    //         price: props.item.price,
-    //         quantity: 1,
-    //         image: props.item.image
-    //     })
-    // }
-
-
 
     const toLink = `/Shoply/items/${props.item.id}`
 
@@ -36,12 +18,9 @@ const ContentItem = (props) => {
                 <Link to={toLink}
                     className={classes.linkStyle}>
                     <div className={classes.fill}>
-                        <img src={props.item.image} alt="" />
+                        <img src={props.item.image} alt="item_image" />
                     </div>
                 </Link>
-                {/* <button onClick={addToCartHandler} className={classes.circularBtn}>
-                    <span className={classes.plus}><MdAddShoppingCart/></span><span className={classes['hidden-text']}>Add to Cart</span>
-                </button> */}
             </div>
             <p className={classes.name}>{props.item.name}</p>
             {<div

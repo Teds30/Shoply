@@ -10,13 +10,6 @@ import ItemViewerContent from './ItemViewerContent'
 
 import classes from './ItemViewer.module.css'
 
-// import CartContext from '../../context/cart-context'
-
-// import Alert from '../UI/Alert'
-// import useDidMountEffect from '../../custom_hook/useDidMountEffect'
-// import { IconContext } from 'react-icons'
-// import {  BsCheckLg } from 'react-icons/bs'
-
 import { DUMMY_ITEMS } from '../../data_items';
 
 const ItemViewer = (props) => {
