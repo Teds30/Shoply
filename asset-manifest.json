@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Shoply/static/css/main.51b93117.css",
-    "main.js": "/Shoply/static/js/main.7c48c51c.js",
+    "main.css": "/Shoply/static/css/main.6e09f7ec.css",
+    "main.js": "/Shoply/static/js/main.e7620761.js",
     "static/media/emptycart.svg": "/Shoply/static/media/emptycart.b5055e56282bba2de480b7282277f3f9.svg",
     "index.html": "/Shoply/index.html",
-    "main.51b93117.css.map": "/Shoply/static/css/main.51b93117.css.map",
-    "main.7c48c51c.js.map": "/Shoply/static/js/main.7c48c51c.js.map"
+    "main.6e09f7ec.css.map": "/Shoply/static/css/main.6e09f7ec.css.map",
+    "main.e7620761.js.map": "/Shoply/static/js/main.e7620761.js.map"
   },
   "entrypoints": [
-    "static/css/main.51b93117.css",
-    "static/js/main.7c48c51c.js"
+    "static/css/main.6e09f7ec.css",
+    "static/js/main.e7620761.js"
   ]
 }
