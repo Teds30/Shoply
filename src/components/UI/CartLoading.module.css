@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    padding-top: 2em;
+    margin: auto;
+    flex-direction: column;
+    width: 70%;
+}
+.container > div {
+    display: inline-flex;
+    /* border: 1px solid red; */
+    flex-wrap: wrap;
+    gap: 1em;
+    border-bottom: 2px solid #cfcfcf;
+    padding-bottom: 1em;
+}
+
+.box1 {
+    /* border: 1px solid red; */
+}
+
+.box2 {
+    width: 150px;
+}

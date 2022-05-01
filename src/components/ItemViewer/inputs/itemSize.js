@@ -1,18 +1,24 @@
 import React from 'react'
 
-import Chip from '@mui/material/Chip';
+import Chip from '@mui/material/Chip'
 
 import classes from './ItemSize.module.css'
 
 const itemSizes = (props) => {
+    const { size } = props
 
-  const {size} = props
-  
-  const chipClass = (props.selected.size_id === size.size_id) ? classes['chip__selected'] : classes.chip
+    const chipClass =
+        props.selected.id === size.id ? classes['chip__selected'] : classes.chip
 
-  return (
-      <Chip className={chipClass} label={size.size} variant="outlined" onClick={props.selectSize.bind(null, size)} clickable />
-  )
+    return (
+        <Chip
+            className={chipClass}
+            label={size.size}
+            variant="outlined"
+            onClick={props.selectSize.bind(null, size)}
+            clickable
+        />
+    )
 }
 
 export default itemSizes

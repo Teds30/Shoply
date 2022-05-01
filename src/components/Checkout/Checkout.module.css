@@ -1,0 +1,39 @@
+main {
+    padding: 0 !important;
+}
+.wrapper {
+    padding: clamp(1rem, 4vw, 3rem);
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+
+    justify-content: space-evenly;
+    font-size: 15px;
+}
+
+.subtitle {
+    color: #00000060;
+}
+.col1 {
+    flex: 1;
+}
+
+.col2 {
+    flex: 1;
+    order: 2;
+}
+
+.expiredPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+@media (max-width: 800px) {
+    .wrapper {
+        flex-direction: column;
+    }
+}

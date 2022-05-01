@@ -1,0 +1,33 @@
+.container {
+    width: 80%;
+    animation: items-appear 1s ease-out forwards;
+    margin: auto;
+}
+.container ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+}
+.container ul li {
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+.box2 {
+    width: 150px;
+}
+
+@keyframes items-appear {
+    from {
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

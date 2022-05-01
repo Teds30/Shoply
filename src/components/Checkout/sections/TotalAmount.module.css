@@ -1,0 +1,21 @@
+.total-prices__container {
+    margin-top: 1.8em;
+    padding: 2em 2em;
+
+    border-radius: 8px;
+    background-color: #f9fbfc;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+.total-prices__container > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 400px) {
+    .total-prices__container {
+        padding: 1em;
+    }
+}

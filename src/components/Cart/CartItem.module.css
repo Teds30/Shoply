@@ -1,56 +1,55 @@
 .cart {
-  animation: items-appear 1s ease-out forwards;
+    animation: items-appear 1s ease-out forwards;
 }
 .cart-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 2px solid #8a2b06;
-  padding: 1rem 0;
-  margin: 1rem 0;
-  letter-spacing: 0;
-  font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #525252;
+    padding: 1rem 0;
+    margin: 1rem 0;
+    letter-spacing: 0;
+    font-size: 16px;
 }
 
-
 .info {
-  margin-left: 12px;
+    margin-left: 12px;
 }
 
 .cart-item h2 {
-  margin: 0 0 0.5rem 0;
-  color: #363636;
+    margin: 0 0 0.5rem 0;
+    color: #363636;
 }
 
 .summary {
-  width: 15rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    width: 15rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .price {
-  font-weight: bold;
-  color: #8a2b06;
+    font-weight: bold;
+    color: #8a2b06;
 }
 
 .quantity {
-  font-weight: bold;
-  border: 1px solid rgb(99, 99, 99);
-  padding: 0.25rem 0.75rem;
-  border-radius: 6px;
-  color: #363636;
+    font-weight: bold;
+    border: 1px solid rgb(99, 99, 99);
+    padding: 0.25rem 0.75rem;
+    border-radius: 6px;
+    color: #363636;
 }
 
 .actions {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 @media (min-width: 768px) {
-  .actions {
-    flex-direction: row;
-  }
+    .actions {
+        flex-direction: row;
+    }
 }
 
 /* .cart-item button {
@@ -74,92 +73,78 @@
   color: white;
 } */
 
-.item-info__container{
-
-  width: 50em;
-  display: inline-flex;
-  
+.item-info__container {
+    width: 50em;
+    display: inline-flex;
 }
 
-.item-info__info{
+.item-info__info {
     padding: 0 1em;
     width: 100%;
 }
 
 .title {
-  font-weight: 600;
-  letter-spacing: 0em;
-  font-family: 'Poppins';
-  font-size: 1em;
+    font-weight: 600;
+    letter-spacing: 0em;
+    font-size: 1em;
 }
 
-.size{
-  font-weight: 300;
-  font-size: .8em;
-  letter-spacing: 0;
-  font-family: 'Poppins';
+.size {
+    font-weight: 300;
+    font-size: 0.8em;
+    letter-spacing: 0;
 }
 
-.color{
-  font-weight: 300;
-  font-size: .8em;
-  letter-spacing: 0;
-  font-family: 'Poppins';
+.color {
+    font-weight: 300;
+    font-size: 0.8em;
+    letter-spacing: 0;
 }
 .quantityContainer {
-  display: inline-flex;
-  border-radius: 12px;
-  border: #c0c0c0 1px solid;
-  padding: 6px 0;
+    display: inline-flex;
+    border-radius: 12px;
+    border: #c0c0c0 1px solid;
+    padding: 6px 0;
 }
 
-.btnQuantity{
-  
-  display: flex;
-  align-items: center;
-
+.btnQuantity {
+    display: flex;
+    align-items: center;
 }
 
-.quantitybutton__left{
-  
-  vertical-align:middle;
-  color: #969696;
-  border: 0;
-  font-size: 1em;
-  background-color: transparent;
-  padding: 0 0 0 12px;
-  cursor: pointer;
+.quantitybutton__left {
+    vertical-align: middle;
+    color: #969696;
+    border: 0;
+    font-size: 1em;
+    background-color: transparent;
+    padding: 0 0 0 12px;
+    cursor: pointer;
 }
-.quantitybutton__right{
-  color: #969696;
-  vertical-align:middle;
-  font-size: 1em;
-  border: 0;
-  background-color: transparent;
-  padding: 0px 12px 0 0;
-  cursor: pointer;
+.quantitybutton__right {
+    color: #969696;
+    vertical-align: middle;
+    font-size: 1em;
+    border: 0;
+    background-color: transparent;
+    padding: 0px 12px 0 0;
+    cursor: pointer;
 }
-.quantitylabel{
-  
-  font-size: .7em;
-  padding: 0em 1em;
-  border-radius: 0;
+.quantitylabel {
+    font-size: 0.7em;
+    padding: 0em 1em;
+    border-radius: 0;
 }
-.col1{
-  margin-bottom: 0;
-
+.col1 {
+    margin-bottom: 0;
 }
 
-.col1 p{
-  margin-bottom: 0 !important;
+.col1 p {
+    margin-bottom: 0 !important;
 }
-.col2{
-  
-  font-size: .7em;
-  color: #41414180;
-}
-.col3{
-  margin-top: .5em;
+
+.col3 {
+    margin-top: 0.5em;
 }
 
 /* .image {
@@ -169,21 +154,21 @@
   background-color: #f7f7f7;
   } */
 .fill {
-  width: 100px;
-  height: 100px;
+    width: 100px;
+    height: 100px;
 
-  background-color: #f7f7f7;
-  border-radius: 8px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  margin-top: 8px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 8px;
 }
 .fill img {
-  width: 80%;
-  height: auto;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+    width: 80%;
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }

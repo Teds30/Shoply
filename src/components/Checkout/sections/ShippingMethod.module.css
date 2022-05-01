@@ -1,0 +1,23 @@
+.sm-container {
+    margin-top: 1.8em;
+}
+
+.sm-card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.error {
+    padding: 0.3em 0.5em !important;
+    color: rgb(219, 87, 87);
+    background-color: rgb(254, 227, 223);
+    width: max-content;
+    border-radius: 4px;
+    margin-bottom: 1em;
+}
+
+.error p {
+    font-size: 0.8em !important;
+}

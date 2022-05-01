@@ -1,51 +1,69 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import './App.css';
+import React from 'react'
+import {
+    BrowserRouter as Router,
+    Route,
+    Routes,
+    Navigate,
+} from 'react-router-dom'
+import './App.css'
 
-import Items from './components/Items/Items';
-import Header from './components/Layout/Header';
-import Cart from './components/Cart/Cart';
-import ItemViewer from './components/ItemViewer/ItemViewer';
-
-// import IMPORT_DATA from './data_import';
+import Items from './components/Items/Items'
+import Header from './components/Layout/Header'
+import Cart from './components/Cart/Cart'
+import ItemViewer from './components/ItemViewer/ItemViewer'
+import Checkout from './components/Checkout/Checkout'
 
 function App() {
+    return (
+        <Router>
+            <Routes>
+                <Route
+                    exact
+                    path="/"
+                    element={<Navigate replace to="/items" />}
+                />
+                <Route
+                    path="/items"
+                    element={
+                        <main>
+                            <Items />
+                        </main>
+                    }
+                />
 
-  // useEffect(()=> {
+                <Route
+                    path="/items/:id"
+                    element={
+                        <main>
+                            <ItemViewer />
+                        </main>
+                    }
+                />
 
-  //   const toImport = {...IMPORT_DATA}
-  //   console.log(toImport)
+                <Route
+                    path="/cart"
+                    element={
+                        <main>
+                            <Cart />
+                        </main>
+                    }
+                />
 
-  //   const importData = async () => {
+                <Route
+                    path="/checkout"
+                    element={
+                        <main>
+                            <Checkout />
+                        </main>
+                    }
+                />
 
-  //     await fetch('https://shoply-25605-default-rtdb.asia-southeast1.firebasedatabase.app/ShopItems.json',
-  //     {
-  //       method: 'POST',
-  //       body: JSON.stringify(toImport)
-  //     })
-  
-  //   }
+                <Route path="*" element={<Navigate replace to="/items" />} />
+            </Routes>
 
-  //   importData()
-    
-  // }, [])
-
-  return (
-      <Router>
-
-        <Routes>
-
-          <Route exact path="/Shoply" element={<main><Items /></main>} />
-          <Route path="/Shoply/shop" element={<main><Items /></main>} />
-          <Route path='/Shoply/cart' element={<main><Cart /></main>} />
-
-          <Route path='/Shoply/items/:id' element={<main><ItemViewer /></main>} />
-        </Routes>
-
-        <Header />
-
-      </Router>
-  );
+            <Header />
+        </Router>
+    )
 }
 
-export default App;
+export default App
