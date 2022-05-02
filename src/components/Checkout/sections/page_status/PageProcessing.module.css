@@ -1,0 +1,11 @@
+.backdrop div {
+    background-color: #ffffff;
+    padding: 1em 2em;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: #00000090;
+}

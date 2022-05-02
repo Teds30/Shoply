@@ -13,7 +13,6 @@ import ItemViewerContent from './ItemViewerContent'
 
 import classes from './ItemViewer.module.css'
 
-import { DUMMY_ITEMS } from '../../data_items'
 
 const ItemViewer = (props) => {
     const { id } = useParams()
@@ -28,7 +27,7 @@ const ItemViewer = (props) => {
 
     useEffect(() => {
         sendRequest(id)
-    }, [sendRequest])
+    }, [sendRequest, id])
 
     if (status === 'pending') {
         return 'Loading....'

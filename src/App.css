@@ -85,6 +85,13 @@ p {
     margin-bottom: 1em !important;
 }
 
+.centered {
+    margin: 3rem auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 body {
     margin: 0;
     background-color: #ffffff;

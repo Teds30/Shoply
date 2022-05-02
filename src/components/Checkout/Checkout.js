@@ -12,17 +12,22 @@ import PaymentMethod from './sections/PaymentMethod'
 import ShippingMethod from './sections/ShippingMethod'
 import PrimaryButton from '../UI/PrimaryButton'
 import PageExpired from './sections/page_status/PageExpired'
-import TotalAmount from './sections/TotalAmount'
-
 import PlacedOrder from './sections/page_status/PlacedOrder'
+import TotalAmount from './sections/TotalAmount'
+import Box from '@mui/material/Box'
+import CircularProgress from '@mui/material/CircularProgress'
 
 const Checkout = () => {
     const dispatch = useDispatch()
     const cart = useSelector((state) => state.cart)
 
-    const hasCart = cart.items.length > 0
+    const [isLoading, setIsLoading] = useState(false)
 
-    const [confirmed, setConfirmed] = useState(false)
+    const [orderStatus, setOrderStatus] = useState({
+        status: '',
+    })
+
+    const hasCart = cart.items.length > 0
 
     const [buyer, setBuyer] = useState({
         name: '',
@@ -88,8 +93,13 @@ const Checkout = () => {
     const placeOrderHandler = async () => {
         setSmIsSubmitted(true)
         setPmIsSubmitted(true)
+        setOrderStatus((state) => {
+            let newState = { ...state, status: 'pending' }
+            return newState
+        })
 
         if (formValid) {
+            setIsLoading(true)
             console.log({
                 items: cart.items,
                 totalAmount: total,
@@ -99,7 +109,10 @@ const Checkout = () => {
             })
 
             dispatch(sendCartData({ items: [], totalAmount: 0 })).then(() => {
-                setConfirmed(true)
+                setOrderStatus((state) => {
+                    let newState = { ...state, status: 'completed' }
+                    return newState
+                })
                 console.log('DONE')
             })
         }
@@ -107,9 +120,9 @@ const Checkout = () => {
 
     return (
         <Fragment>
+            {orderStatus.status === 'completed' && <PlacedOrder />}
             {!hasCart && <PageExpired />}
-            {confirmed && <PlacedOrder />}
-            {hasCart && !confirmed && (
+            {hasCart && orderStatus.status !== 'completed' && (
                 <div className={classes.wrapper}>
                     <div className={classes.col1}>
                         <div>
@@ -147,9 +160,27 @@ const Checkout = () => {
                         />
 
                         <br />
-                        <PrimaryButton width="100%" onClick={placeOrderHandler}>
-                            Place Order
-                        </PrimaryButton>
+                        <Box sx={{ m: 1, position: 'relative' }}>
+                            <PrimaryButton
+                                width="100%"
+                                onClick={placeOrderHandler}
+                                disabled={isLoading}
+                            >
+                                {!isLoading && <Fragment>Place Order</Fragment>}
+                                {isLoading && (
+                                    <Fragment>
+                                        <CircularProgress
+                                            size={16}
+                                            sx={{
+                                                color: '#fff',
+                                                marginRight: '1em',
+                                            }}
+                                        />
+                                        Placing Order...
+                                    </Fragment>
+                                )}
+                            </PrimaryButton>
+                        </Box>
                     </div>
                 </div>
             )}

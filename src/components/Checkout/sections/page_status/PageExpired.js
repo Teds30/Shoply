@@ -10,7 +10,7 @@ const PageExpired = () => {
     const navigate = useNavigate()
 
     const handleClick = () => {
-        navigate('/Shoply/cart')
+        navigate('/cart')
     }
 
     return (

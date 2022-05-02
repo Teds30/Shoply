@@ -1,9 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import { IconContext } from 'react-icons'
-
-import ItemStar from './ItemStar'
+import Rating from '@mui/material/Rating'
 
 import classes from './ContentItem.module.css'
 
@@ -21,17 +19,21 @@ const ContentItem = (props) => {
                     </div>
                 </Link>
             </div>
-            <br />
             <p className={classes.name}>{props.item.name}</p>
             {
                 <div className={classes.reviewContainer}>
                     <span className={classes.star}>
                         {
-                            <IconContext.Provider value={{ color: '#403E57' }}>
-                                <div>
-                                    <ItemStar star={props.item.total_star} />
-                                </div>
-                            </IconContext.Provider>
+                            <Rating
+                                name="half-rating-read"
+                                defaultValue={props.item.total_star}
+                                precision={0.5}
+                                style={{
+                                    color: '#403E57',
+                                    fontSize: '1.1em',
+                                }}
+                                readOnly
+                            />
                         }
                     </span>
                     <span className={classes.reviews}>

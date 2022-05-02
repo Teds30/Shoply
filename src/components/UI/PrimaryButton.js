@@ -9,6 +9,7 @@ const PrimaryButton = (props) => {
             style={{ width: props.width }}
             onClick={props.onClick}
             type={props.submit}
+            disabled={props.disabled}
         >
             {props.children}
         </button>

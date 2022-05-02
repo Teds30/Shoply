@@ -35,15 +35,14 @@ const ItemCollapse = (props) => {
             }
         >
             <Panel className={classes.panel} header="Product Info" key="1">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Similique, recusandae!{' '}
+                <p className="sp subtitle">{item.description}</p>
+            </Panel>
+            <Panel className={classes.panel} header="Delivery" key="2">
+                <p className="sp subtitle">
+                    Expected Delivery Time: 3 - 7 days
                 </p>
             </Panel>
-            <Panel className={classes.panel} header="Description" key="2">
-                <p>{item.description}</p>
-            </Panel>
-            <Panel className={classes.panel} header="Delivery" key="3">
+            <Panel className={classes.panel} header="Payment Method" key="3">
                 <ul>{paymentMethod}</ul>
             </Panel>
         </Collapse>

@@ -107,7 +107,7 @@ li {
     width: 100px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 830px) {
     main {
         padding: 0;
     }

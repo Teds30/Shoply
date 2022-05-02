@@ -1,4 +1,4 @@
-import { Fragment } from "react";
+import { Fragment } from 'react'
 
 const Cod = (props) => {
     return (
@@ -6,14 +6,12 @@ const Cod = (props) => {
             <svg
                 version="1.0"
                 xmlns="http://www.w3.org/2000/svg"
-                width={`${props.width}pt` || "512.000000pt"}
-                height={`${props.height}pt` || "512.000000pt"}
                 viewBox="0 0 512.000000 512.000000"
                 preserveAspectRatio="xMidYMid meet"
             >
                 <g
                     transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
-                    fill={props.fill || "#000000"}
+                    fill={props.fill || '#000000'}
                     stroke="none"
                 >
                     <path
@@ -61,7 +59,7 @@ l0 -1000 -2000 0 -2000 0 0 1000 0 1000 2000 0 2000 0 0 -1000z"
                 </g>
             </svg>
         </Fragment>
-    );
-};
+    )
+}
 
-export default Cod;
+export default Cod

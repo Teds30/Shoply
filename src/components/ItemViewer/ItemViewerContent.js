@@ -62,17 +62,17 @@ const ItemViewerContent = (props) => {
 
         const colorLen = Object.keys(item.colors).length
         if (colorLen > 0) {
-            if (selectedSize.size === '') {
+            if (!selectedSize.size) {
                 setHasChosenSize('none')
             } else {
                 setHasChosenSize('has')
             }
-            if (selectedColor.color === '') {
+            if (!selectedColor.color) {
                 setHasChosenColor('none')
             } else {
                 setHasChosenColor('has')
             }
-            if (selectedSize.size !== '' && selectedColor.color !== '') {
+            if (selectedSize.size && selectedColor.color) {
                 dispatch(
                     cartActions.add({
                         id: cartItemID,
@@ -92,12 +92,12 @@ const ItemViewerContent = (props) => {
         }
 
         if (colorLen === 0) {
-            if (selectedSize.size === '') {
+            if (!selectedSize) {
                 setHasChosenSize('none')
             } else {
                 setHasChosenSize('has')
             }
-            if (selectedSize.size !== '') {
+            if (selectedSize.size) {
                 dispatch(
                     cartActions.add({
                         id: cartItemID,

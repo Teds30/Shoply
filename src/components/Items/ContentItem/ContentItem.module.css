@@ -1,9 +1,7 @@
 .item {
-    /* /* display: flex;
-    justify-content: space-between;
-    margin: 1rem;
-    padding-bottom: 1rem; */
-    /* border-bottom: 1px solid #ccc;  */
+    display: flex;
+    flex-direction: column;
+    gap: 0.4em;
     color: #414141;
 }
 
@@ -12,7 +10,7 @@
 }
 
 .price {
-    font-weight: bold;
+    font-weight: 700 !important;
     margin-top: 0;
 }
 
@@ -45,6 +43,7 @@
     background-color: #f7f7f7;
     width: 250px;
     height: 300px;
+    margin-bottom: 0.3em;
 }
 .fill {
     display: flex;
@@ -103,12 +102,16 @@
     margin-left: 1em;
 
     letter-spacing: 0;
-    font-size: 0.6em;
+    font-size: 0.7em;
     color: #41414190;
 
-    padding: 1em;
+    /* padding: 1em; */
 }
 
+.star {
+    display: flex;
+    align-items: center;
+}
 .item p {
     margin-top: 1em;
 }

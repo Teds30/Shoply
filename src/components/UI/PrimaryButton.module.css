@@ -8,6 +8,12 @@
     /* box-shadow: 0 3px 12px #1890ff60; */
     cursor: pointer;
 }
+
+.primarybutton:disabled {
+    
+    background-color: #33333350;
+}
+
 @media (max-width: 320px) {
     .primarybutton {
         font-size: 0.8em;
