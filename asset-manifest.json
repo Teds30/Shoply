@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/shoply/static/css/main.9bb59e1e.css",
-    "main.js": "/shoply/static/js/main.4e555e39.js",
+    "main.js": "/shoply/static/js/main.898058e0.js",
     "static/css/323.d2195924.chunk.css": "/shoply/static/css/323.d2195924.chunk.css",
     "static/js/323.75f31c58.chunk.js": "/shoply/static/js/323.75f31c58.chunk.js",
     "static/css/559.f9487087.chunk.css": "/shoply/static/css/559.f9487087.chunk.css",
@@ -18,7 +18,7 @@
     "static/media/undraw_confirmed_re_sef7.svg": "/shoply/static/media/undraw_confirmed_re_sef7.f52438661eec072ab0af9aaaff4055a6.svg",
     "index.html": "/shoply/index.html",
     "main.9bb59e1e.css.map": "/shoply/static/css/main.9bb59e1e.css.map",
-    "main.4e555e39.js.map": "/shoply/static/js/main.4e555e39.js.map",
+    "main.898058e0.js.map": "/shoply/static/js/main.898058e0.js.map",
     "323.d2195924.chunk.css.map": "/shoply/static/css/323.d2195924.chunk.css.map",
     "323.75f31c58.chunk.js.map": "/shoply/static/js/323.75f31c58.chunk.js.map",
     "559.f9487087.chunk.css.map": "/shoply/static/css/559.f9487087.chunk.css.map",
@@ -32,6 +32,6 @@
   },
   "entrypoints": [
     "static/css/main.9bb59e1e.css",
-    "static/js/main.4e555e39.js"
+    "static/js/main.898058e0.js"
   ]
 }
