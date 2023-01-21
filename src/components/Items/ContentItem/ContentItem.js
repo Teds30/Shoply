@@ -6,7 +6,7 @@ import Rating from '@mui/material/Rating'
 import classes from './ContentItem.module.css'
 
 const ContentItem = (props) => {
-    const toLink = `/items/${props.item.id}`
+    const toLink = `Shoply/items/${props.item.id}`
 
     const reviewsCount = Object.keys(props.item.reviews).length
 
