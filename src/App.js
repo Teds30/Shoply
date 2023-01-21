@@ -35,11 +35,11 @@ const App = () => {
                 <Header />
                 <Routes>
                     <Route
-                        path="/"
-                        element={<Navigate replace to="/items" />}
+                        path="/shoply/"
+                        element={<Navigate replace to="/shoply/items" />}
                     />
                     <Route
-                        path="/items"
+                        path="/shoply/items"
                         element={
                             <main>
                                 <Items />
@@ -48,7 +48,7 @@ const App = () => {
                     />
 
                     <Route
-                        path="/items/:id"
+                        path="/shoply/items/:id"
                         element={
                             <main>
                                 <ItemViewer />
@@ -57,7 +57,7 @@ const App = () => {
                     />
 
                     <Route
-                        path="/cart"
+                        path="/shoply/cart"
                         element={
                             <main>
                                 <Cart />
@@ -66,7 +66,7 @@ const App = () => {
                     />
 
                     <Route
-                        path="/checkout"
+                        path="/shoply/checkout"
                         element={
                             <main>
                                 <Checkout />
