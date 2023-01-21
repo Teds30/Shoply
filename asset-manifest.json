@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Shoply/static/css/main.9bb59e1e.css",
-    "main.js": "/Shoply/static/js/main.a16350ae.js",
+    "main.js": "/Shoply/static/js/main.9717963c.js",
     "static/css/323.d2195924.chunk.css": "/Shoply/static/css/323.d2195924.chunk.css",
     "static/js/323.75f31c58.chunk.js": "/Shoply/static/js/323.75f31c58.chunk.js",
     "static/css/559.f9487087.chunk.css": "/Shoply/static/css/559.f9487087.chunk.css",
-    "static/js/559.48debbde.chunk.js": "/Shoply/static/js/559.48debbde.chunk.js",
+    "static/js/559.51c8a5d2.chunk.js": "/Shoply/static/js/559.51c8a5d2.chunk.js",
     "static/css/438.1b27f010.chunk.css": "/Shoply/static/css/438.1b27f010.chunk.css",
-    "static/js/438.c60b1fcc.chunk.js": "/Shoply/static/js/438.c60b1fcc.chunk.js",
+    "static/js/438.151dc625.chunk.js": "/Shoply/static/js/438.151dc625.chunk.js",
     "static/js/243.206dc98a.chunk.js": "/Shoply/static/js/243.206dc98a.chunk.js",
     "static/css/9.24bc9392.chunk.css": "/Shoply/static/css/9.24bc9392.chunk.css",
     "static/js/9.046d3313.chunk.js": "/Shoply/static/js/9.046d3313.chunk.js",
@@ -18,13 +18,13 @@
     "static/media/undraw_confirmed_re_sef7.svg": "/Shoply/static/media/undraw_confirmed_re_sef7.f52438661eec072ab0af9aaaff4055a6.svg",
     "index.html": "/Shoply/index.html",
     "main.9bb59e1e.css.map": "/Shoply/static/css/main.9bb59e1e.css.map",
-    "main.a16350ae.js.map": "/Shoply/static/js/main.a16350ae.js.map",
+    "main.9717963c.js.map": "/Shoply/static/js/main.9717963c.js.map",
     "323.d2195924.chunk.css.map": "/Shoply/static/css/323.d2195924.chunk.css.map",
     "323.75f31c58.chunk.js.map": "/Shoply/static/js/323.75f31c58.chunk.js.map",
     "559.f9487087.chunk.css.map": "/Shoply/static/css/559.f9487087.chunk.css.map",
-    "559.48debbde.chunk.js.map": "/Shoply/static/js/559.48debbde.chunk.js.map",
+    "559.51c8a5d2.chunk.js.map": "/Shoply/static/js/559.51c8a5d2.chunk.js.map",
     "438.1b27f010.chunk.css.map": "/Shoply/static/css/438.1b27f010.chunk.css.map",
-    "438.c60b1fcc.chunk.js.map": "/Shoply/static/js/438.c60b1fcc.chunk.js.map",
+    "438.151dc625.chunk.js.map": "/Shoply/static/js/438.151dc625.chunk.js.map",
     "243.206dc98a.chunk.js.map": "/Shoply/static/js/243.206dc98a.chunk.js.map",
     "9.24bc9392.chunk.css.map": "/Shoply/static/css/9.24bc9392.chunk.css.map",
     "9.046d3313.chunk.js.map": "/Shoply/static/js/9.046d3313.chunk.js.map",
@@ -32,6 +32,6 @@
   },
   "entrypoints": [
     "static/css/main.9bb59e1e.css",
-    "static/js/main.a16350ae.js"
+    "static/js/main.9717963c.js"
   ]
 }
