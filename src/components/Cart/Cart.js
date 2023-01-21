@@ -101,7 +101,7 @@ const Cart = () => {
                                     <div className={classes.orderInfo}>
                                         PHP {totalAmount}
                                         <Link
-                                            to="/checkout"
+                                            to="/Shoply/checkout"
                                             className={classes.link}
                                         >
                                             <PrimaryButton>

@@ -77,7 +77,7 @@ const App = () => {
                         <Route path="placed_order" element={<PlacedOrder />} />
                     </Route>
 
-                    <Route path="*" element={<Navigate replace to="/" />} />
+                    <Route path="*" element={<Navigate replace to="/Shoply" />} />
                 </Routes>
             </Suspense>
         </Router>

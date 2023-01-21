@@ -11,14 +11,14 @@ const Header = () => {
         <Fragment>
             <header className={classes.header}>
                 <div>
-                    <Link to="/" className={classes.link}>
+                    <Link to="/Shoply/" className={classes.link}>
                         Home
                     </Link>
                 </div>
                 <h2>SHOPLY</h2>
 
                 <div className={classes['cart-link']}>
-                    <Link to="/cart" className={classes.link}>
+                    <Link to="/Shoply/cart" className={classes.link}>
                         Cart
                     </Link>
                 </div>
